@@ -23,9 +23,10 @@ export class books extends Component {
         if (isLoaded) {
              return (
             <div>
-               
+               <h1>Teste</h1>
                 { books.map(book => {
-                    <h4>{book.id.rendered}</h4>
+                    <p>{book.link}</p>
+                    {console.log(book.link)}
                 })}
             </div>
         )
